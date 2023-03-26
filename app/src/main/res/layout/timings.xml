@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cardview_light_background"
+    tools:context=".LoginPage">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:background="#430031"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="32sp"
+        android:text="Select a Time" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></Space>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/eleven"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#630031"
+            android:textColor="@android:color/white"
+            android:text="11:00AM"
+            android:textSize="18sp"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp"></Space>
+        <Button
+            android:id="@+id/one"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#630031"
+            android:textColor="@android:color/white"
+            android:text="1:00PM"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></Space>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/three"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#630031"
+            android:textColor="@android:color/white"
+            android:text="3:00PM"
+            android:textSize="18sp"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp"></Space>
+        <Button
+            android:id="@+id/six"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#630031"
+            android:textColor="@android:color/white"
+            android:text="6:00PM"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"></Space>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/eight"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#630031"
+            android:textColor="@android:color/white"
+            android:text="8:00PM"
+            android:textSize="18sp"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="20dp"></Space>
+        <Button
+            android:id="@+id/ten"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:backgroundTint="#630031"
+            android:textColor="@android:color/white"
+            android:text="10:00PM"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="290dp">
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:backgroundTint="#630031"
+            android:textColor="@android:color/white"
+            android:text="Next"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</LinearLayout>
+
