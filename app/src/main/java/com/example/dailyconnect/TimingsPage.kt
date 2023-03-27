@@ -11,7 +11,7 @@ class TimingsPage : AppCompatActivity() {
 
         var next = findViewById<Button>(R.id.next)
         next.setOnClickListener{
-            val intent2 = android.content.Intent(this, LoginPage::class.java)
+            val intent2 = android.content.Intent(this, SeatsPageActivity::class.java)
             startActivity(intent2)
         }
     }
