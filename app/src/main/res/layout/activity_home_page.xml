@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/walle"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -19,32 +20,32 @@
             android:backgroundTint="@color/white"
             android:text="@string/profile"
             android:textColor="@android:color/black" />
+
         <Space
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
 
 
         <Button
+            android:id="@+id/settings"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
-            android:text="@string/settings"
             android:backgroundTint="@color/white"
-            android:textColor="@android:color/black"
-            android:id="@+id/settings">
-        </Button>
+            android:text="@string/settings"
+            android:textColor="@android:color/black"></Button>
     </LinearLayout>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:textAlignment="center"
         android:background="#430031"
-        android:textColor="#FFF"
         android:gravity="center"
-        android:textSize="32sp"
-        android:text="@string/daily_connect" />
+        android:text="@string/daily_connect"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:textSize="32sp" />
 
     <Space
         android:layout_width="wrap_content"
@@ -64,13 +65,12 @@
             android:textColor="@android:color/black" />
 
         <Button
+            android:id="@+id/signup"
             android:layout_width="206dp"
             android:layout_height="50dp"
-            android:text="@string/wallet"
             android:backgroundTint="@color/white"
-            android:textColor="@android:color/black"
-            android:id="@+id/signup">
-        </Button>
+            android:text="@string/wallet"
+            android:textColor="@android:color/black"></Button>
     </LinearLayout>
 
     <Space
@@ -81,11 +81,12 @@
         android:id="@+id/next"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:backgroundTint="#630031"
-        android:textColor="@android:color/white"
-        android:text="@string/deals_and_cashbacks"
         android:layout_gravity="center"
-        android:textSize="24sp"/>
+        android:backgroundTint="#630031"
+        android:text="@string/deals_and_cashbacks"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
     <Space
         android:layout_width="wrap_content"
         android:layout_height="20dp" />
@@ -93,7 +94,7 @@
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        app:srcCompat="@drawable/movie_adver"/>
+        app:srcCompat="@drawable/movie_adver" />
 
     <Space
         android:layout_width="wrap_content"
@@ -107,24 +108,30 @@
         <ImageButton
             android:id="@+id/wallet"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_lock_lock" />
 
         <ImageButton
             android:id="@+id/grocery"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
+            android:layout_weight="1"
+            android:src="@android:drawable/btn_star_big_on" />
 
         <ImageButton
             android:id="@+id/flightTickets"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            />
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_dialog_map" />
 
-        <ImageButton
+        <ImageView
+            android:id="@+id/movies"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/movieTickets" />
+            android:layout_height="53dp"
+            android:layout_weight="1"
+            android:src="@android:drawable/ic_menu_camera" />
 
     </LinearLayout>
 

@@ -13,7 +13,7 @@ class LoginPage : AppCompatActivity() {
 
         val login = findViewById<Button>(R.id.login)
         login.setOnClickListener{
-            val intent1 = android.content.Intent (this@LoginPage, TimingsPage::class.java)
+            val intent1 = android.content.Intent (this@LoginPage, HomePageActivity::class.java)
             startActivity(intent1)
 
         }
