@@ -28,11 +28,12 @@
         android:id="@+id/card_view"
         android:layout_width="370dp"
         android:layout_height="270dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
         card_view:cardCornerRadius="4dp"
-        android:backgroundTint="@color/white">
+        android:backgroundTint="@color/white"
+        card_view:cardElevation="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -152,41 +153,163 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_2"
         android:layout_width="370dp"
-        android:layout_height="200dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_height="350dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
         card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="10dp"
         android:backgroundTint="@color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginRight="20dp"
             android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
             android:background="#FFF"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/text_10"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
                 android:layout_marginTop="10dp"
                 android:text="Enter Traveller Details:"
-                android:textStyle="bold"
                 android:textColor="#000"
-                android:textSize="15sp"/>
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/text_11"
                 android:layout_width="match_parent"
                 android:layout_height="20dp"
-                android:layout_marginTop="5dp"
-                android:text="Name"
+                android:layout_marginTop="10dp"
+                android:text="First Name"
+                android:layout_marginBottom="2dp"
                 android:textColor="#000"
-                android:textSize="13sp"/>
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:background="@drawable/textinput"></EditText>
+
+            <TextView
+                android:id="@+id/text_12"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:text="Last Name"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:background="@drawable/textinput"
+                android:textColorHint="#000"></EditText>
+
+            <TextView
+                android:id="@+id/text_13"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:text="Phone Number"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:background="@drawable/textinput"
+                android:textColorHint="#000"></EditText>
+
+            <TextView
+                android:id="@+id/text_14"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="5dp"
+                android:text="Gender"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:layout_width="300dp"
+                android:layout_height="30dp"
+                android:id="@+id/RG1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/Radio_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="7.5dp"
+                        android:layout_marginBottom="7.5dp"
+                        android:scaleX="0.80"
+                        android:scaleY="0.80"
+                        android:text="Male"
+                        android:textSize="20sp"
+                        android:checked="false"
+                        android:buttonTint="@color/black"></RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/Radio_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="7.5dp"
+                        android:layout_marginBottom="7.5dp"
+                        android:scaleX="0.80"
+                        android:scaleY="0.80"
+                        android:text="Female"
+                        android:textSize="20sp"
+                        android:checked="false"
+                        android:buttonTint="@color/black"/>
+
+                    <RadioButton
+                        android:id="@+id/Radio_3"
+                        android:layout_width="85dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="7.5dp"
+                        android:layout_marginBottom="7.5dp"
+                        android:scaleX="0.80"
+                        android:scaleY="0.80"
+                        android:text="Other"
+                        android:textSize="20sp"
+                        android:checked="false"
+                        android:buttonTint="@color/black"/>
+                </LinearLayout>
+            </RadioGroup>
+            <TextView
+                android:id="@+id/text_15"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="2dp"
+                android:text="Date of Birth"
+                android:textColor="#000"
+                android:textSize="15sp" />
+            <EditText
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:background="@drawable/textinput"
+                android:textColorHint="#000"
+                android:hint="MM/DD/YYYY"></EditText>
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/checkout"
+        android:layout_width="410dp"
+        android:layout_height="60dp"
+        android:text="Checkout"
+        android:textSize="25sp"/>
+
 </LinearLayout>
 </ScrollView>
