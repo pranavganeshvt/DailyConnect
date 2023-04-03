@@ -34,8 +34,9 @@
         <activity
             android:name=".TimingsPage"
             android:exported="false" />
+
         <activity
-            android:name=".SecureCheckoutActivity"
+            android:name=".TheatresListActivity"
             android:exported="false" />
         <activity
             android:name=".LoginPage"
