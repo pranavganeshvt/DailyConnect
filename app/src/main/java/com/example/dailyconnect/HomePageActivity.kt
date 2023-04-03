@@ -13,9 +13,14 @@ class HomePageActivity : AppCompatActivity() {
         setContentView(R.layout.activity_home_page)
 
         val movieImage = findViewById<ImageView>(R.id.movies)
-
         movieImage.setOnClickListener {
             val intent = Intent (this@HomePageActivity, TimingsPage::class.java)
+            startActivity(intent)
+        }
+
+        val groceries = findViewById<ImageView>(R.id.groceries)
+        groceries.setOnClickListener {
+            val intent = Intent (this@HomePageActivity, GroceriesActivity::class.java)
             startActivity(intent)
         }
 

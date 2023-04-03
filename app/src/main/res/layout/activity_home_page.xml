@@ -98,31 +98,32 @@
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="20dp" />
+        android:layout_height="20dp"
+        android:layout_weight="1" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="55dp"
         android:orientation="horizontal">
 
-        <ImageButton
+        <ImageView
             android:id="@+id/wallet"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="51dp"
             android:layout_weight="1"
             android:src="@android:drawable/ic_lock_lock" />
 
-        <ImageButton
-            android:id="@+id/grocery"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <ImageView
+            android:id="@+id/groceries"
+            android:layout_width="31dp"
+            android:layout_height="53dp"
             android:layout_weight="1"
-            android:src="@android:drawable/btn_star_big_on" />
+            android:src="@drawable/apple" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/flightTickets"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="53dp"
             android:layout_weight="1"
             android:src="@android:drawable/ic_dialog_map" />
 
@@ -134,6 +135,11 @@
             android:src="@android:drawable/ic_menu_camera" />
 
     </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
 
 
 </LinearLayout>
