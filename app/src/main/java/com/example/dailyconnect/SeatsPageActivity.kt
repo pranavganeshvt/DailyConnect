@@ -12,7 +12,7 @@ class SeatsPageActivity : AppCompatActivity() {
 
         val proceedButton = findViewById<Button>(R.id.proceed_button)
         proceedButton.setOnClickListener{
-            val intent3 = Intent(this@SeatsPageActivity, PaymentActivity::class.java)
+            val intent3 = Intent(this@SeatsPageActivity, DisplayCardsActivity::class.java)
             startActivity(intent3)
         }
     }
