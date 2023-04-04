@@ -11,10 +11,11 @@ class LoginPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
 
-        val login = findViewById<Button>(R.id.login);
+        val login = findViewById<Button>(R.id.login)
         login.setOnClickListener{
-            val intent1 = android.content.Intent (this, TimingsPage::class.java)
+            val intent1 = android.content.Intent (this@LoginPage, HomePageActivity::class.java)
             startActivity(intent1)
+
         }
     }
 }

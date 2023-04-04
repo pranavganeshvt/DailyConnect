@@ -18,13 +18,31 @@
             android:name=".PaymentActivity"
             android:exported="false" />
         <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GroceriesActivity"
+            android:exported="false"
+            android:label="@string/title_activity_groceries"
+            android:theme="@style/Theme.DailyConnect.NoActionBar" />
+        <activity
             android:name=".HomePageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SecureCheckoutActivity"
             android:exported="false" />
         <activity
             android:name=".SeatsPageActivity"
             android:exported="false" />
         <activity
             android:name=".TimingsPage"
+            android:exported="false" />
+
+        <activity
+            android:name=".TheatresListActivity"
             android:exported="false" />
         <activity
             android:name=".LoginPage"

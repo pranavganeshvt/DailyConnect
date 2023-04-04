@@ -9,10 +9,10 @@ class TimingsPage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.timings)
 
-        var next = findViewById<Button>(R.id.next)
-        next.setOnClickListener{
-            val intent2 = android.content.Intent(this, SeatsPageActivity::class.java)
-            startActivity(intent2)
+        val next1 = findViewById<Button>(R.id.next)
+        next1.setOnClickListener{
+            val intent4 = android.content.Intent(this@TimingsPage, SeatsPageActivity::class.java)
+            startActivity(intent4)
         }
     }
 }

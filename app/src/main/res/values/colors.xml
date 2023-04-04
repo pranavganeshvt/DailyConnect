@@ -12,4 +12,13 @@
     <color name="yellow">#FFFF00</color>
     <color name="appColor">#630031</color>
 
+    <color name="bt_light_gray">#3C3B39</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#3f972d</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="gray">#bab7b7</color>
+    <color name="lightgreen">#3f972d</color>
+    <color name="green">#177023</color>
+    <color name="red">#df0d0d</color>
+    <color name="purple">#f556148c</color>
 </resources>
