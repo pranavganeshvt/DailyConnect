@@ -2,50 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/walle"
+    android:id="@+id/wallet"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HomePageActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <Button
-            android:id="@+id/profile"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/white"
-            android:text="@string/profile"
-            android:textColor="@android:color/black" />
-
-        <Space
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1" />
-
-
-        <Button
-            android:id="@+id/settings"
-            android:layout_width="wrap_content"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/white"
-            android:text="@string/settings"
-            android:textColor="@android:color/black"></Button>
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#430031"
-        android:gravity="center"
-        android:text="@string/daily_connect"
-        android:textAlignment="center"
-        android:textColor="#FFF"
-        android:textSize="32sp" />
+    tools:context=".HomePageActivity"
+    tools:ignore="DuplicateIds">
 
     <Space
         android:layout_width="wrap_content"
@@ -61,6 +23,7 @@
             android:layout_width="206dp"
             android:layout_height="50dp"
             android:backgroundTint="@color/white"
+            android:textStyle="bold"
             android:text="@string/refer_a_friend"
             android:textColor="@android:color/black" />
 
@@ -69,8 +32,9 @@
             android:layout_width="206dp"
             android:layout_height="50dp"
             android:backgroundTint="@color/white"
+            android:textStyle="bold"
             android:text="@string/wallet"
-            android:textColor="@android:color/black"></Button>
+            android:textColor="@android:color/black" />
     </LinearLayout>
 
     <Space
@@ -89,7 +53,7 @@
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="20dp" />
+        android:layout_height="40dp" />
 
     <ImageButton
         android:layout_width="match_parent"
@@ -98,48 +62,50 @@
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="20dp"
-        android:layout_weight="1" />
+        android:layout_height="155dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="55dp"
+        android:layout_height="100dp"
         android:orientation="horizontal">
 
-        <ImageView
+        <ImageButton
             android:id="@+id/wallet"
-            android:layout_width="wrap_content"
-            android:layout_height="51dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@android:drawable/ic_lock_lock" />
+            android:scaleType="centerInside"
+            android:src="@drawable/wallet" />
 
-        <ImageView
+        <ImageButton
             android:id="@+id/groceries"
-            android:layout_width="31dp"
-            android:layout_height="53dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@drawable/apple" />
+            android:scaleType="centerInside"
+            android:src="@drawable/grocery" />
 
-        <ImageView
-            android:id="@+id/flightTickets"
-            android:layout_width="wrap_content"
-            android:layout_height="53dp"
+        <ImageButton
+            android:id="@+id/movie"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@android:drawable/ic_dialog_map" />
+            android:scaleType="centerInside"
+            android:src="@drawable/flight" />
 
-        <ImageView
-            android:id="@+id/movies"
-            android:layout_width="wrap_content"
-            android:layout_height="53dp"
+        <ImageButton
+            android:id="@+id/flights"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:src="@android:drawable/ic_menu_camera" />
+            android:scaleType="centerInside"
+            android:src="@drawable/movie" />
 
     </LinearLayout>
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_weight="1" />
-
 
 </LinearLayout>
