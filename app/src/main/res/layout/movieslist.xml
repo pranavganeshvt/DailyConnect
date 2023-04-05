@@ -176,7 +176,7 @@
 
 
                         <Button
-                            android:id="@+id/BB"
+                            android:id="@+id/topGun"
                             android:textAlignment="center"
                             android:textColor="#ffffff"
                             android:textStyle="bold"

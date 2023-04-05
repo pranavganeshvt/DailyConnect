@@ -14,20 +14,20 @@ class TheatresListActivity : AppCompatActivity() {
         val regal = findViewById<Button>(R.id.regal)
         regal.setOnClickListener {
             val intent1 =
-                android.content.Intent(this@TheatresListActivity, HomePageActivity::class.java)
+                android.content.Intent(this@TheatresListActivity, MoviesList::class.java)
             startActivity(intent1)
         }
             val lyric = findViewById<Button>(R.id.Lyric)
             lyric.setOnClickListener {
                 val intent2 =
-                    android.content.Intent(this@TheatresListActivity, HomePageActivity::class.java)
+                    android.content.Intent(this@TheatresListActivity, MoviesList::class.java)
                 startActivity(intent2)
             }
                 val radford = findViewById<Button>(R.id.Radford)
                 radford.setOnClickListener {
                     val intent3 = android.content.Intent(
                         this@TheatresListActivity,
-                        HomePageActivity::class.java
+                        MoviesList::class.java
                     )
                     startActivity(intent3)
                      }
@@ -35,7 +35,7 @@ class TheatresListActivity : AppCompatActivity() {
                     bb.setOnClickListener {
                         val intent4 = android.content.Intent(
                             this@TheatresListActivity,
-                            HomePageActivity::class.java
+                            MoviesList::class.java
                         )
                         startActivity(intent4)
                         }

@@ -12,6 +12,12 @@
         android:theme="@style/Theme.DailyConnect"
         tools:targetApi="31">
         <activity
+            android:name=".DisplayCardsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+        <activity
             android:name=".CartActivity"
             android:exported="false" />
         <activity
@@ -34,7 +40,9 @@
         <activity
             android:name=".TimingsPage"
             android:exported="false" />
-
+        <activity
+            android:name=".MoviesList"
+            android:exported="false" />
         <activity
             android:name=".TheatresListActivity"
             android:exported="false" />
