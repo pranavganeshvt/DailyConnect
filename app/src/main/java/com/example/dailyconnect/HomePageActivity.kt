@@ -4,8 +4,6 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Menu
-import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageView
 
@@ -16,34 +14,22 @@ class HomePageActivity : AppCompatActivity() {
 
         val movieImage = findViewById<ImageView>(R.id.movie)
         movieImage.setOnClickListener {
-            val intent = Intent (this@HomePageActivity, TheatresListActivity::class.java)
-            startActivity(intent)
+            val intent1 = Intent (this@HomePageActivity, TheatresListActivity::class.java)
+            startActivity(intent1)
         }
 
         val groceries = findViewById<ImageView>(R.id.groceries)
         groceries.setOnClickListener {
-            val intent = Intent (this@HomePageActivity, GroceriesActivity::class.java)
-            startActivity(intent)
+            val intent2 = Intent (this@HomePageActivity, GroceriesActivity::class.java)
+            startActivity(intent2)
         }
 
-    }
-    override fun onCreateOptionsMenu(menu: Menu): Boolean {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        menuInflater.inflate(R.menu.settings, menu)
-        return true
-    }
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.option_1 -> {
-                // Handle option 1 selection
-                return true
-            }
-            R.id.option_2 -> {
-                // Handle option 2 selection
-                return true
-            }
-            else -> return super.onOptionsItemSelected(item)
+        val flighttickets = findViewById<ImageView>(R.id.flights)
+        flighttickets.setOnClickListener{
+            val intent3 = Intent( this@HomePageActivity, FlightDetails::class.java)
+            startActivity(intent3)
         }
+
     }
 
 }

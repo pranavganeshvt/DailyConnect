@@ -85,7 +85,7 @@
             android:src="@drawable/grocery" />
 
         <ImageButton
-            android:id="@+id/movie"
+            android:id="@+id/flights"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -93,7 +93,7 @@
             android:src="@drawable/flight" />
 
         <ImageButton
-            android:id="@+id/flights"
+            android:id="@+id/movie"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_weight="1"

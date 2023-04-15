@@ -28,14 +28,15 @@
         <activity
             android:name=".HomePageActivity"
             android:exported="false" />
-        <activity
-            android:name=".PaymentActivity"
-            android:exported="false" />
+
         <activity
             android:name=".SecureCheckoutActivity"
             android:exported="false" />
         <activity
             android:name=".SeatsPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FlightDetails"
             android:exported="false" />
         <activity
             android:name=".TimingsPage"

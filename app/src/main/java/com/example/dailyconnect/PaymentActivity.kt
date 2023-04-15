@@ -14,7 +14,7 @@ class PaymentActivity : AppCompatActivity() {
 
         val checkout = findViewById<Button>(R.id.button_purchase)
         checkout.setOnClickListener {
-            val intent = Intent(this@PaymentActivity, SecureCheckoutActivity::class.java)
+            val intent = Intent(this@PaymentActivity, MovieInfo::class.java)
             startActivity(intent)
         }
     }
