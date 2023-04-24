@@ -15,6 +15,15 @@
             android:name=".DisplayCardsActivity"
             android:exported="false" />
         <activity
+            android:name=".DisplayCardsActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".FlightConfirmActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MovieInfo"
+            android:exported="false" />
+        <activity
             android:name=".PaymentActivity"
             android:exported="false" />
         <activity

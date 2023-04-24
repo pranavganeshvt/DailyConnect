@@ -14,7 +14,7 @@ class SecureCheckoutActivity : AppCompatActivity() {
 
         val checkout = findViewById<Button>(R.id.checkout)
         checkout.setOnClickListener {
-            val intent1 = Intent(this@SecureCheckoutActivity, LoginPage::class.java)
+            val intent1 = Intent(this@SecureCheckoutActivity, DisplayCardsActivity2::class.java)
             startActivity(intent1)
         }
     }

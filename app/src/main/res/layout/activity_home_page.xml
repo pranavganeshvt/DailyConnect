@@ -7,7 +7,16 @@
     android:orientation="vertical"
     tools:context=".HomePageActivity"
     tools:ignore="DuplicateIds">
-
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAlignment="center"
+        android:background="#430031"
+        android:textColor="#FFF"
+        android:gravity="center"
+        android:textSize="32sp"
+        android:text="@string/daily_connect" />
     <Space
         android:layout_width="wrap_content"
         android:layout_height="20dp" />
@@ -18,37 +27,35 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/login"
-            android:layout_width="206dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/white"
+            android:id="@+id/refer"
+            android:layout_width="202.5dp"
+            android:layout_height="100dp"
+            android:backgroundTint="#630031"
             android:textStyle="bold"
             android:text="@string/refer_a_friend"
-            android:textColor="@android:color/black" />
-
+            android:textColor="@android:color/white"
+            android:textSize="20sp"/>
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="100dp"/>
         <Button
-            android:id="@+id/signup"
-            android:layout_width="206dp"
-            android:layout_height="50dp"
-            android:backgroundTint="@color/white"
+            android:id="@+id/deals"
+            android:layout_width="204dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#630031"
             android:textStyle="bold"
-            android:text="@string/wallet"
-            android:textColor="@android:color/black" />
+            android:text="@string/deals_and_cashbacks"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
     </LinearLayout>
 
     <Space
         android:layout_width="wrap_content"
         android:layout_height="20dp" />
 
-    <Button
-        android:id="@+id/next"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_gravity="center"
-        android:backgroundTint="#630031"
-        android:text="@string/deals_and_cashbacks"
-        android:textColor="@android:color/white"
-        android:textSize="24sp" />
+
 
     <Space
         android:layout_width="wrap_content"
@@ -61,7 +68,7 @@
 
     <Space
         android:layout_width="wrap_content"
-        android:layout_height="155dp"/>
+        android:layout_height="100dp" />
 
     <LinearLayout
         android:layout_width="match_parent"

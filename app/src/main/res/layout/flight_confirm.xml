@@ -30,8 +30,8 @@
         android:inputType="textMultiLine"
         android:lines="7"
         android:gravity="center"
-        android:text="Regal Cinemas, Christiansburg\nMovie: Lion King, English 3D\n
-Wednesday, 10th May 2023 \nSeating Info: AUDI M1, M2 \nTotal Amount: $35.85"
+        android:text="Charlotte to Roanoke\nAmerican Airlines\n
+Wednesday, 10th May 2023 \n        18:00 to 19:00 (1h 00m) \nTotal Amount: $238.13"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
