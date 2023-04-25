@@ -2,22 +2,15 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:gravity="left">
     <item
-        android:id="@+id/profile_menu"
-        android:icon="@drawable/profilenew"
+        android:id="@+id/profile"
+        android:icon="@drawable/ic_user"
+        android:menuCategory="secondary"
+        android:orderInCategory="1"
         android:title="profile"
-        app:showAsAction="always"
-        android:layout_gravity="left">
-        <menu>
+        app:showAsAction="ifRoom|withText" />
             <item
-                android:id="@+id/option_1"
-                android:title="profile_photo"
+                android:id="@+id/logout"
                 android:menuCategory="secondary"
-                android:orderInCategory="1"/>
-            <item
-                android:id="@+id/option_2"
-                android:title="Contacts"
-                android:menuCategory="secondary"
-                android:orderInCategory="2"/>
-        </menu>
-    </item>
+                android:orderInCategory="2"
+                android:title="Logout" />
 </menu>
