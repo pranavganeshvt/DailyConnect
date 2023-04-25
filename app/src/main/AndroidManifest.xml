@@ -1,70 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
-
-    <application
-        android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.DailyConnect"
-        tools:targetApi="31">
-        <activity
-            android:name=".DisplayCardsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".DisplayCardsActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".FlightConfirmActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MovieInfo"
-            android:exported="false" />
-        <activity
-            android:name=".PaymentActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CartActivity"
-            android:exported="false" />
-        <activity
-            android:name=".GroceriesActivity"
-            android:exported="false"
-            android:label="@string/title_activity_groceries"
-            android:theme="@style/Theme.DailyConnect.NoActionBar" />
-        <activity
-            android:name=".HomePageActivity"
-            android:exported="false" />
-
-        <activity
-            android:name=".SecureCheckoutActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SeatsPageActivity"
-            android:exported="false" />
-        <activity
-            android:name=".FlightDetails"
-            android:exported="false" />
-        <activity
-            android:name=".TimingsPage"
-            android:exported="false" />
-        <activity
-            android:name=".MoviesList"
-            android:exported="false" />
-        <activity
-            android:name=".TheatresListActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LoginPage"
-            android:exported="true">
+<!--This XML file does not appear to have any style information associated with it. The document tree is shown below.-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <application android:allowBackup="true" android:dataExtractionRules="@xml/data_extraction_rules" android:fullBackupContent="@xml/backup_rules" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:supportsRtl="true" android:theme="@style/Theme.DailyConnect" tools:targetApi="31">
+        <activity android:name=".GroceriesAddAddress" android:exported="false"/>
+        <activity android:name=".GroceriesConfirmation" android:exported="false"/>
+        <activity android:name=".Address" android:exported="false"/>
+        <activity android:name=".GroceriesActivity" android:exported="false"/>
+        <activity android:name=".DisplayCardsActivity" android:exported="false"/>
+        <activity android:name=".FlightConfirmActivity" android:exported="false"/>
+        <activity android:name=".MovieInfo" android:exported="false"/>
+        <activity android:name=".PaymentActivity" android:exported="false"/>
+        <activity android:name=".CartActivity" android:exported="false"/>
+        <activity android:name=".HomePageActivity" android:exported="false"/>
+        <activity android:name=".SecureCheckoutActivity" android:exported="false"/>
+        <activity android:name=".SeatsPageActivity" android:exported="false"/>
+        <activity android:name=".FlightDetails" android:exported="false"/>
+        <activity android:name=".TimingsPage" android:exported="false"/>
+        <activity android:name=".MoviesList" android:exported="false"/>
+        <activity android:name=".TheatresListActivity" android:exported="false"/>
+        <activity android:name=".LoginPage" android:exported="true">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
     </application>
-
 </manifest>
