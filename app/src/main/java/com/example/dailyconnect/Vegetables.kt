@@ -1,4 +1,4 @@
-package com.example.dailyconnect.ui
+package com.example.dailyconnect
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,56 +10,49 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.dailyconnect.FruitsAdapter
-import com.example.dailyconnect.databinding.FragmentFruitsBinding
-import kotlinx.coroutines.launch
 import com.example.dailyconnect.R
+import com.example.dailyconnect.databinding.FragmentVegetablesBinding
+import kotlinx.coroutines.launch
 
-
-class Fruits : Fragment() {
-    private var _binding : FragmentFruitsBinding? = null
+class Vegetables : Fragment() {
+    private var _binding : FragmentVegetablesBinding? = null
     private val binding
         get() = checkNotNull(_binding) {
             "Fruits Fragment is null"
         }
     val names = listOf(
-        "Apple",
-        "Banana",
-        "Black Grapes",
-        "Green Grapes",
-        "Guava",
-        "Mango",
-        "Oranges",
-        "PineApple"
+        "Potato",
+        "Onion",
+        "Tomato",
+        "Mirchi",
+        "Brinjal"
     )
     val pics = listOf(
-         R.drawable.apple,
-        R.drawable.banana,
-        R.drawable.blackgrapes,
-        R.drawable.greengrapes,
-        R.drawable.guava,
-        R.drawable.mango,
-        R.drawable.oranges,
-        R.drawable.pineapple
+        R.drawable.potato,
+        R.drawable.onion,
+        R.drawable.tomato,
+        R.drawable.mirchi,
+        R.drawable.brinjal
     )
-    val price = listOf(6.00, 5.00, 3.00, 5.00, 7.00, 6.00, 5.00, 3.00)
+    val price = listOf(6.00, 5.00, 3.00, 5.00, 7.00)
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        _binding = FragmentFruitsBinding.inflate(inflater, container, false)
+        _binding = FragmentVegetablesBinding.inflate(inflater, container, false)
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.fruitsRecyclerView.layoutManager = LinearLayoutManager(context)
+        binding.vegetablesRecyclerView.layoutManager = LinearLayoutManager(context)
 
         viewLifecycleOwner.lifecycleScope.launch {
             viewLifecycleOwner.lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                binding.fruitsRecyclerView.adapter = FruitsAdapter( names, pics, price)
+                binding.vegetablesRecyclerView.adapter = FruitsAdapter( names, pics, price)
             }
         }
     }
