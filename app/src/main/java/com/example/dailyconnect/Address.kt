@@ -16,7 +16,7 @@ class Address : AppCompatActivity() {
             startActivity(intent)
         }
         val button2 = findViewById<Button>(R.id.checkout_groceries)
-        button.setOnClickListener {
+        button2.setOnClickListener {
             val intent = Intent(this@Address, GroceriesConfirmation::class.java)
             startActivity(intent)
         }

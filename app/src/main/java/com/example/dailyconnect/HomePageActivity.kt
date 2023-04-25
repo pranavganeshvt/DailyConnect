@@ -9,6 +9,8 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.*
 import android.net.*
+import android.view.Menu
+import android.view.MenuItem
 
 
 lateinit var sendMsgBtn: Button
@@ -72,6 +74,20 @@ class HomePageActivity : AppCompatActivity() {
             startActivity(intent3)
         }
 
+    }
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.settings, menu)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when(item.itemId) {
+            R.id.logout -> {
+                val intent4 = Intent(this@HomePageActivity, LoginPage::class.java)
+                startActivity(intent4)
+            }
+        }
+        return true
     }
 
 }
