@@ -49,7 +49,7 @@
             android:text="One-Way flight"
             android:textStyle="bold"
             android:textColor="#000"
-            android:textSize="15sp"/>
+            android:textSize="16sp"/>
             <TextView
                 android:id="@+id/text_2"
                 android:layout_width="match_parent"
@@ -74,7 +74,7 @@
                 android:text="Charlotte (CLT) to Roanoke (ROA)"
                 android:textStyle="bold"
                 android:textColor="#000"
-                android:textSize="15sp"/>
+                android:textSize="16sp"/>
             <TextView
                 android:id="@+id/text_4"
                 android:layout_width="match_parent"
@@ -115,7 +115,7 @@
                 android:text="Your price summary"
                 android:textStyle="bold"
                 android:textColor="#000"
-                android:textSize="15sp"/>
+                android:textSize="16sp"/>
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="4dp">
@@ -177,7 +177,7 @@
                 android:layout_marginTop="10dp"
                 android:text="Enter Traveller Details:"
                 android:textColor="#000"
-                android:textSize="15sp"
+                android:textSize="16sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -188,7 +188,7 @@
                 android:text="First Name"
                 android:layout_marginBottom="2dp"
                 android:textColor="#000"
-                android:textSize="15sp" />
+                android:textSize="16sp" />
 
             <EditText
                 android:layout_width="130dp"
@@ -203,7 +203,7 @@
                 android:layout_marginBottom="2dp"
                 android:text="Last Name"
                 android:textColor="#000"
-                android:textSize="15sp" />
+                android:textSize="16sp" />
 
             <EditText
                 android:layout_width="130dp"
@@ -219,7 +219,7 @@
                 android:layout_marginBottom="2dp"
                 android:text="Phone Number"
                 android:textColor="#000"
-                android:textSize="15sp" />
+                android:textSize="16sp" />
 
             <EditText
                 android:layout_width="130dp"
@@ -234,7 +234,7 @@
                 android:layout_marginTop="5dp"
                 android:text="Gender"
                 android:textColor="#000"
-                android:textSize="15sp" />
+                android:textSize="16sp" />
 
             <RadioGroup
                 android:layout_width="300dp"
@@ -294,7 +294,7 @@
                 android:layout_marginBottom="2dp"
                 android:text="Date of Birth"
                 android:textColor="#000"
-                android:textSize="15sp" />
+                android:textSize="16sp" />
             <EditText
                 android:layout_width="130dp"
                 android:layout_height="30dp"
@@ -309,7 +309,7 @@
         android:layout_width="410dp"
         android:layout_height="60dp"
         android:text="Checkout"
-        android:textSize="25sp"/>
+        android:textSize="20sp"/>
 
 </LinearLayout>
 </ScrollView>
