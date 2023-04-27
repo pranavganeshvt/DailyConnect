@@ -24,14 +24,14 @@
     <TextView
         android:id="@+id/textView3"
         android:layout_width="386dp"
-        android:layout_height="240dp"
+        android:layout_height="250dp"
         android:layout_marginTop="36dp"
         android:textColor="#630031"
         android:inputType="textMultiLine"
         android:lines="7"
         android:gravity="center"
         android:text="Charlotte to Roanoke\nAmerican Airlines\n
-Wednesday, 10th May 2023 \n        18:00 to 19:00 (1h 00m) \nTotal Amount: $238.13"
+Wednesday, 10th May 2023 \n        18:00 to 19:00 (1h 00m) \nTotal Rewards: 12.50$ \n Total Amount: $238.13"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,7 +54,7 @@ Wednesday, 10th May 2023 \n        18:00 to 19:00 (1h 00m) \nTotal Amount: $238.
     <Button
         android:id="@+id/done"
         android:layout_width="415dp"
-        android:layout_height="80dp"
+        android:layout_height="70dp"
         android:layout_marginTop="80dp"
         android:backgroundTint="#630031"
         android:text="Done"
