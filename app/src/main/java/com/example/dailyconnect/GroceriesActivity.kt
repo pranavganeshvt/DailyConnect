@@ -5,9 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import androidx.navigation.NavHost
-import androidx.navigation.ui.NavigationUI
-import androidx.navigation.ui.setupWithNavController
 import com.example.dailyconnect.databinding.ActivityGroceriesBinding
 
 class GroceriesActivity : AppCompatActivity() {
@@ -21,7 +18,7 @@ class GroceriesActivity : AppCompatActivity() {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
 
-        val fragment = Fruits()
+        val fragment = Vegetables()
         fragmentTransaction.add(R.id.fragment_container, fragment)
 
 
