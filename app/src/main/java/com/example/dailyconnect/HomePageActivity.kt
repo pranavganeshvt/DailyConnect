@@ -1,5 +1,6 @@
 package com.example.dailyconnect
 
+import WalletActivity
 import android.content.DialogInterface
 import android.content.Intent
 import android.net.*
@@ -72,6 +73,11 @@ class HomePageActivity : AppCompatActivity() {
         flighttickets.setOnClickListener{
             val intent3 = Intent( this@HomePageActivity, FlightDetails::class.java)
             startActivity(intent3)
+        }
+
+        val wallet = findViewById<ImageView>(R.id.wallet)
+        wallet.setOnClickListener{
+            val intent4 = Intent (this@HomePageActivity, WalletActivity::class.java)
         }
 
     }

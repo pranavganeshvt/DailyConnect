@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.WalletActivity"
+    tools:context="WalletActivity"
     android:orientation="vertical">
     <TextView
         android:id="@+id/textView"
@@ -27,7 +27,7 @@
         android:layout_height="30dp"
         android:textColor="@color/appColor"
         android:textAlignment="center"
-        android:text="Available Balance: 1500"
+        android:text="Available Balance: 150.00$"
         android:textSize="20dp"
         />
 

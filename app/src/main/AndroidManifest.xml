@@ -14,6 +14,8 @@
         <activity
             android:name=".DisplayCardsActivity"
             android:exported="false" />
+        <activity android:name="WalletActivity"
+            android:exported="false" />
         <activity
             android:name=".GroceriesConfirmation"
             android:exported="false" />
